@@ -88,11 +88,20 @@
     Datepicker
     ................................................. */
 	
-	$('.datepicker').pickadate();
+	$('.datepicker').pickadate({
+		disable: [
+			2
+		  ]
+	});
 	
-	$('.time').pickatime();
-	
-	
+
+	$('.timepicker').pickatime({
+		formatSubmit: 'HH:i',
+		min: [11,0],
+		max: [21,45],
+		interval: 15
+	});
+
 	
 	
 	
